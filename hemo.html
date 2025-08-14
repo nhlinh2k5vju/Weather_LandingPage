@@ -1,0 +1,122 @@
+/* ------------------------------------------- */
+/* CSS cho phần Hero Section */
+/* ------------------------------------------- */
+
+/* Thẻ main để căn giữa nội dung */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    text-align: center;
+}
+
+/* Flex Container cho toàn bộ section */
+#section1 {
+    display: flex;
+    flex-direction: row; /* Sắp xếp các phần tử theo hàng ngang */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px; /* Khoảng cách giữa văn bản và hình ảnh */
+    max-width: 1200px; /* Chiều rộng tối đa của container */
+    margin: 0 auto; /* Căn giữa container */
+}
+
+/* Phần chữ và nút bấm */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn lề trái nội dung */
+    text-align: left;
+    max-width: 500px;
+    color: #FFFFFF;
+}
+
+.hero h1 {
+    font-size: 4em; /* Sử dụng em/rem để responsive */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* Container cho 2 nút bấm */
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Khoảng cách giữa 2 nút */
+    align-items: center;
+}
+
+/* Nút TRY NOW */
+#try-now {
+    display: block;
+    padding: 15px 30px;
+    background-color: #333333;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+#try-now:hover {
+    background-color: #555555;
+}
+
+/* Phần FREE TILL... */
+#hero-time a {
+    display: block;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+/* Hình ảnh iPhone */
+.iphone-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------- */
+/* CSS cho Responsive (màn hình nhỏ) */
+/* ------------------------------------------- */
+@media (max-width: 992px) {
+    #section1 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        gap: 30px;
+    }
+
+    .hero {
+        align-items: center; /* Căn giữa nội dung văn bản */
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .iphone-image {
+        order: -1; /* Đưa hình ảnh lên trên */
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero-box {
+        flex-direction: column; /* Chuyển nút bấm thành cột */
+    }
+}
