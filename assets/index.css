@@ -1,0 +1,303 @@
+* {
+    font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    background-color: #D2982D;
+    
+}
+a {
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    max-width: 435px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.hero-heading h1 {
+    font-size: 5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 95%;
+}
+.hero-heading p {
+    font-size: 1.25rem;
+    max-width: 419px;
+    width: 100%;
+    font-weight: 500;
+}
+.hero-button {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.try-now {
+    background-color: #2B261D;
+    max-width: 114px;
+    width: 100%;
+    border-radius: 4.77px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.time {
+    background-color: #F5B747;
+    max-width: 176px;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 4.77px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.try-now a {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+.time a {
+    color: #2B261D;
+    font-size: 0.8rem;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.try-now:hover {
+    background-color: #45a049;    
+    transform: scale(1.05);       
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.time:hover {
+    background-color: #45a049;    
+    transform: scale(1.05);       
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.iphone12-mock-up {
+    max-width: 765px;
+    width: 100%;
+
+}
+
+@media (max-width: 1024px) {
+    .content {
+        justify-content: center;
+    }
+    .hero-heading h1 {font-size: 3.75rem;}
+    .hero-heading p { font-size: 1.125rem;}
+    .hero-text {font-size: 0.8rem;}
+    .iphone12-mock-up {
+        max-width: 433px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 744px){
+    .content {
+        max-width: 744px;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-left: -10%;
+    }
+    .hero {
+        max-width: 435px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text {
+        margin-bottom: 0px;
+    }
+    .iphone12-mock-up {
+        display: flex;
+        justify-content: center;   
+        align-items: center;      
+        margin-top: 20px;
+    }
+
+    .iphone12-mock-up img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content  {
+        flex-direction: column;
+    }
+    .hero-heading {font-size: 3rem;}
+}
+
+/*section2*/
+.sec2-table {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sec2-background {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.sec2-content-features {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+.feature1and2 {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.feature1, .feature2, .feature3 {
+    max-width: 269px;
+    color: #FFFFFF;
+}
+.feature1-heading , .feature2-heading, .feature3-heading  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.feature1 h1, .feature2 h1, .feature3 h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.feature1-heading p, .feature2-heading p, .feature3-heading p {
+    font-size: 0.75rem;
+    font-weight: 400 ;
+}
+.sec2-main-text2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sec2-main-text3-line2 p, .sec2-main-text3-line3 p {
+    color: #403B45;
+}
+.sec2-main-text3-line2 p, .sec2-main-text3-line3 p,
+.sec2-main-text3-line1 p{
+    justify-content: center;
+    align-items: center;
+}
+.sec2-main-text3-line1, .sec2-main-text3-line2 {
+    margin-bottom: 5px;
+}
+
+.sec2-main {
+    background-color: #E0A12E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    padding-top: 100px;
+}
+.sec2-main-text {
+    max-width: 328px;
+}
+.sec2-main-text1 h1{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 2.125rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.sec2-main-text2 h1{
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2B261D;
+}
+.sec2-main-text3-line1, .sec2-main-text3-line2,
+ .sec2-main-text3-line3 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+ }
+
+ .sec2-main-text3-line1 p, .sec2-main-text3-line2 p,
+ .sec2-main-text3-line3 p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 100%;
+ }
+
+.sec2-main-text3-line2 img,
+.sec2-main-text3-line3 img {
+    color: #FFFFFF;
+}
+.sec2-main-text3-line1 p {
+    color: #FFFFFF;
+}
+
+@media (max-width: 1024px){
+    .feature1, .feature2, .feature3 {
+        max-width: 263px;
+    }
+    .feature1-heading, .feature2-heading,
+    .feature3-heading {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 744px) {
+    .sec2-main {
+        display: none;
+    }
+    .feature1and2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec2-content-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 375px) {
+    .hero {
+        padding-left: 20px;
+    }
+    .try-now {
+        margin-top: 15px;
+    }
+    .feature1and2 {
+        flex-direction: column;
+    }
+}
